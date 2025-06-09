@@ -47,26 +47,49 @@ That’s it for now. After implementing those five features, I will be thinking 
 
 To test the OS by yourself, follow these steps carefully:
 
-1. Make sure [rustup](https://www.rust-lang.org/tools/install) and Rust are installed.
-2. Install the Rust nightly toolchain (the version with experimental features enabled) by running:  
-   `rustup install nightly`
-3. Set Rust nightly as the default Rust version for this project with:  
-   `rustup override set nightly`
-4. Install the required Rust components:  
-   `rustup component add rust-src`  
-   `rustup component add llvm-tools-preview`
-5. Install the `bootimage` tool (used to create bootable images) with:  
-   `cargo install bootimage`
-6. Install QEMU (a virtual machine) via your system’s package manager or from the [official website](https://www.qemu.org/download/).
-7. Clone this repository with:  
-   `git clone https://github.com/Alkotikotik/Qclipsing-os`
-8. Change directory to Qclipsing OS with:  
-   `cd Qclipsing-os`
-9. Build the OS with:  
-   `cargo bootimage`
-10. Finally, run the OS in QEMU with:  
-    `qemu-system-x86_64 -drive format=raw,file=target/x86_64-specification_of_target/debug/bootimage-qclipsing-os.bin`
-Done now you can boot into OS and enjoy lovely message!
+### Prerequisites
+
+1.  Make sure [rustup](https://www.rust-lang.org/tools/install) and Rust are installed.
+2.  Install the Rust nightly toolchain (the version with experimental features enabled) by running:
+    ```sh
+    rustup install nightly
+    ```
+3.  Set Rust nightly as the default Rust version for this project with:
+    ```sh
+    rustup override set nightly
+    ```
+4.  Install the required Rust components:
+    ```sh
+    rustup component add rust-src
+    rustup component add llvm-tools-preview
+    ```
+5.  Install the `bootimage` tool (used to create bootable images) with:
+    ```sh
+    cargo install bootimage
+    ```
+6.  Install QEMU (a virtual machine) via your system’s package manager or from the [official website](https://www.qemu.org/download/).
+
+### Running the OS
+
+1.  Clone this repository with:
+    ```sh
+    git clone [https://github.com/Alkotikotik/Qclipsing-os](https://github.com/Alkotikotik/Qclipsing-os)
+    ```
+2.  Change directory to Qclipsing OS with:
+    ```sh
+    cd Qclipsing-os
+    ```
+3.  Build the OS with:
+    ```sh
+    cargo bootimage
+    ```
+4.  Finally, run the OS in QEMU with:
+    ```sh
+    qemu-system-x86_64 -drive format=raw,file=target/x86_64-specification_of_target/debug/bootimage-qclipsing-os.bin
+    ```
+
+Done, now you can boot into the OS and enjoy a lovely message!
+
 ---
 ## 🌠 The Very Future
 
