@@ -37,20 +37,28 @@ I did sketch a little development plan for Qclipsing-OS:
 1. 🧮 **Basic memory allocator**: alternatives to the `malloc()` and `free()` in C/C++
 2. ⌨️ **Minimal drivers**: keyboard, screen I/O
 3. 🐚 **Simple shell**: just to communicate with the system
-4. 🧠 **Expand memory features**: things such as paging and virtual memory
+4. 🧠 **Expand memory features**: things such as paging and virtual memory🚀
 5. 🗄 **Filesystem**: just basic, without temporal features
 
 That’s it for now. After implementing those five features, I will be thinking about what I am going to do next.
 
 ---
-## Getting Started 🚀
+## 🚀 Getting Started 
 
-To test the OS by yourself, follow these steps carefully:
+To test the OS by ***yourself***, you can either download boot image and boot into it, or build it yourself.
 
-### Prerequisites
+### Download bootable image
 
+1. Go to '/target/x86_64-specification_of_target/debug and download' 'bootimage-qclipsing-os.bin'
+2. Boot into OS using any VM, for qemu:
+```sh
+qemu-system-x86_64 -drive format=raw,file=<path to the boot image>
+```
+### Build it yourself
+
+#### Prerequirements
 1.  Make sure [rustup](https://www.rust-lang.org/tools/install) and Rust are installed.
-2.  Install the Rust nightly toolchain (the version with experimental features enabled) by running:
+2.  Install the ***Rust nightly toolchain*** (the version with experimental features enabled) by running:
     ```sh
     rustup install nightly
     ```
@@ -67,15 +75,15 @@ To test the OS by yourself, follow these steps carefully:
     ```sh
     cargo install bootimage
     ```
-6.  Install QEMU (a virtual machine) via your system’s package manager or from the [official website](https://www.qemu.org/download/).
+6.  Install ***QEMU*** (a virtual machine) via your system’s package manager or from the [official website](https://www.qemu.org/download/).
 
-### Running the OS
+#### Running the OS
 
-1.  Clone this repository with:
+1.  Clone this ***repository*** with:
     ```sh
     git clone [https://github.com/Alkotikotik/Qclipsing-os](https://github.com/Alkotikotik/Qclipsing-os)
     ```
-2.  Change directory to Qclipsing OS with:
+2.  Change directory to ***Qclipsing OS*** with:
     ```sh
     cd Qclipsing-os
     ```
@@ -83,7 +91,7 @@ To test the OS by yourself, follow these steps carefully:
     ```sh
     cargo bootimage
     ```
-4.  Finally, run the OS in QEMU with:
+4.  Finally, run the OS in ***QEMU*** with:
     ```sh
     qemu-system-x86_64 -drive format=raw,file=target/x86_64-specification_of_target/debug/bootimage-qclipsing-os.bin
     ```
