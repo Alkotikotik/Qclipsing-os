@@ -2,13 +2,10 @@
 #![no_main] // No main for the same reason
 
 use core::panic::PanicInfo; // Panic is an unmanageable error
-
 // b"<ascii art>" means that it is a byte string, aka a sequence of bytes,
 // which means that each character becomes a byte
 // and &[u8] means that it is only a reference to the unsigned 8-bit integers
 static HELLO: &[u8] = br#"
-
-
 +------------------------------------------------------------------------+
 |  /$$$$$$            /$$ /$$                     /$$                    |
 | /$$__  $$          | $$|__/                    |__/                    |
@@ -32,7 +29,6 @@ static HELLO: &[u8] = br#"
 +------------------------------------------------------------------------+
 
 "#;
-
 const VGA_BUFFER: *mut u8 = 0xb8000 as *mut u8; //Pointer to the VGA buffer(font and its color)
 const BUFFER_WIDTH: usize = 80; // Number of text colums in the VGA buffer
 const BUFFER_HEIGHT: usize = 60; // Number of text row in the same buffer
