@@ -98,21 +98,3 @@ qemu-system-x86_64 -drive format=raw,file=<path to the boot image>
 
 Done, now you can boot into the OS and enjoy a lovely message!
 
----
-## 🌠 The Very Future
-
-In the very future, I am planning to implement the following projects for Qclipsing-OS:
-
-- A **programming language and compiler** for it  
-- **Connection to the internet** through a protocol  
-- A **physics engine**  
-- And some more stuff — but we'll see about it 😄
-
----
-
-## 🎥 YouTube Channel
-
-I am also going to make a blog and upload it on **YouTube** just to capture the progress.
-
-Stay tuned! 🚀
-
