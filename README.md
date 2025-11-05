@@ -13,6 +13,8 @@ I am building it by following the [**OSTEP** book](https://pages.cs.wisc.edu/~re
 
 The Qclipsing-OS is going to have proper **memory management**, **filesystem**, **shell**, **drivers**, and other stuff in the future.
 
+However right now Qclipsing-OS outputs only "Hello world" because I realized that this project is a little too ambitious for the free time I have, so I focused on other, relativly simpler projects.
+
 ---
 
 ## 🗂 The Temporal FS
