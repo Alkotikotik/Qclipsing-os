@@ -9,7 +9,7 @@
 
 The **Qclipsing-OS** is an OS built completely from scratch using **Rust**. It is built around an idea of a **temporal filesystem**.
 
-I am building it by following the [**OSTEP** book](https://pages.cs.wisc.edu/~remzi/OSTEP/), [**OSDev Wiki**](https://wiki.osdev.org/Expanded_Main_Page), and just a little bit of [**Phil Opp's course** - building OS on rust](https://os.phil-opp.com/), while trying to figure out everything by myself. Hence, it will have a unique architecture.
+I am building it by following the [**OSTEP** book](https://pages.cs.wisc.edu/~remzi/OSTEP/), [**OSDev Wiki**](https://wiki.osdev.org/Expanded_Main_Page), and just a little bit of [**Phil Opp's course** - building OS on rust](https://os.phil-opp.com/) to use like a guideline and starting point, while trying to figure out everything by myself. Hence, it will have a unique architecture.
 
 The Qclipsing-OS is going to have proper **memory management**, **filesystem**, **shell**, **drivers**, and other stuff in the future.
 
